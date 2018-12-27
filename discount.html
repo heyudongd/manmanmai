@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <a href="inlanddiscount.html" class="icon-back"></a>
+            </div>
+            <div class="right">
+                
+                    <a href="#">
+                        <img src="images/header_app.png" alt="">
+                    </a>
+                
+            </div>
+            <div class="center">
+                国内折扣
+            </div>
+       </div>
+
+       <section class="containe">
+    
+        <!-- keng -->
+        
+    </section>
+
+            <!-- 底部 -->
+            <footer>
+                    <div class="top clearfix">
+                        <a href="">登录</a>
+                        <a href="">注册</a>
+                        <a href="#" class="img">返回顶部</a>
+                    </div>
+                    <div class="bottom">
+                            <p>
+                                <a href="javascript:;" style="color: Red;">手机APP下载</a>
+                                <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+                            </p>
+                            <p>m.manmanbuy.com</p>
+                    </div>
+                </footer>
+        </div>  
+  <script type="text/html" id="disTip">
+    {{each result v}}
+    <h3>{{v.productName}}</h3>
+    <h4>{{v.productPrice}}</h4>
+    <div class="infor">
+        <span>{{v.productFrom}}</span>
+        <span>{{v.productTime}}</span>
+        <span>{{v.productTips}}</span>
+    </div>
+    <div class="content">
+        
+        <p class="des1">{{v.productInfo}}</p>
+        
+         <div class="bigImg">
+            <%==v.productImg%>
+         </div>
+    </div>
+   
+    <div class="buy">
+        <a href="#">前往购买</a>
+    </div>
+    <div class="tubiao">
+        <img src="images/mmbweixin2.png" alt="">
+    </div>
+    <div class="comment">
+        <%==v.productComment%>
+    </div>
+    {{/each}}
+
+</script>
+ 
+    
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/art-template.js"></script>
+    <script src="js/Tools.js"></script>
+    <script src="js/discount.js"></script>
+   
+    
+</body>
+</html>

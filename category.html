@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+                <div class="right">
+                    <a href="#">
+                        <img src="images/header_app.png" alt="">
+                    </a>
+                </div>
+                   <div class="left">
+                       <a href="index.html">
+                           <img src="images/header_logo.png" alt="">
+                       </a>
+                   </div>
+            </header>
+            <section class="search">
+                    <form action="">
+                       <input type="text" placeholder="请输入你想比价的商品">
+                       <input type="button" value="搜索">
+                    </form>
+                </section>
+        
+        <!-- 分类 -->
+        <section class="category">
+                <ul>
+             
+                <!-- 坑 -->
+
+             
+         </ul>
+         </section>
+    
+
+
+         
+            <!-- 底部 -->
+            <footer>
+                    <div class="top clearfix">
+                        <a href="">登录</a>
+                        <a href="">注册</a>
+                        <a href="#" class="img">返回顶部</a>
+                    </div>
+                    <div class="bottom">
+                            <p>
+                                <a href="javascript:;" style="color: Red;">手机APP下载</a>
+                                <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+                            </p>
+                            <p>m.manmanbuy.com</p>
+                    </div>
+                </footer>
+        </div>  
+
+      <script type="text/html" id="titleTip">
+      {{each result v i}}
+        <li class="cate">
+                 <a data-flag="true" data-index="{{v.titleId}}" data-titleid="{{v.titleId}}" class="cate-a down" href="javascript:void(0)">{{v.title}}</a>
+                 <ul class="category-goods  clearfix" style="display:none;">
+                
+                 </ul>
+             </li>
+        {{/each}}     
+      </script>
+      <script type="text/html" id="Tip2">
+        {{each result v}}
+                 <li>
+                     <a href="productlist.html?categoryid={{v.categoryId}}&amp;category={{v.category}}" >{{v.category}}</a>
+                 </li>
+         {{/each}}
+  </script>
+
+    
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/art-template.js"></script>
+    <script src="js/category.js"></script>
+    
+</body>
+</html>

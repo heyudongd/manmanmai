@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/gsproduct.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <a href="index.html" class="icon-back"></a>
+            </div>
+            <div class="right">
+                
+                    <a href="#">
+                        <img src="images/header_app.png" alt="">
+                    </a>
+                
+            </div>
+            <div class="center">
+                凑品单
+            </div>
+       </div>
+<!-- 导航 -->
+<div class="select clearfix">
+    <div class="search">
+    </div>
+    <ul class="list ">
+               <li class="jd down">
+                   京东
+               </li>
+                <li class="hbei down">
+                    华北
+                </li>
+                 <li class="allPrice down">
+                     全部价格
+                 </li>
+    </ul>
+</div>
+<div class="shop" style="display: none;">
+    <ul>
+        
+            <!-- 京东 -->
+     
+ </ul>
+ </div>
+ <div class="area" style="display: none;">
+    <ul>
+   
+      <!-- 地区 -->
+
+    
+</ul>
+</div>
+
+<div class="price" style="display: none;">
+    <li class="active">全部价格</li>
+</div>
+
+<div class="product">
+    <ul class="clearfix">
+       
+   
+    </ul>
+</div>
+
+
+            <!-- 底部 -->
+            <footer>
+                    <div class="top clearfix">
+                        <a href="">登录</a>
+                        <a href="">注册</a>
+                        <a href="#" class="img">返回顶部</a>
+                    </div>
+                    <div class="bottom">
+                            <p>
+                                <a href="javascript:;" style="color: Red;">手机APP下载</a>
+                                <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+                            </p>
+                            <p>m.manmanbuy.com</p>
+                    </div>
+                </footer>
+        </div>  
+       <script type="text/html" id="tip1">
+
+            {{each result v i}}
+            <li class=" {{i===0?"active":''}}" data-id="{{v.shopId}}">{{v.shopName}}</li>
+            {{/each}}
+    
+    </script> 
+    <script type="text/html" id="tip2">
+        {{each result v i}}
+        <li class=" {{i===0?"active":''}}" data-id="{{v.areaId}}">{{v.areaName}}</li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="tip3">
+        {{each result v i}}
+        <li>
+            <a href="">
+           <div class="pic">
+               <img src="{{v.productImg}}" alt="">
+           </div>
+            <div class="infor">
+                <p class="des">{{v.productName}}</p>
+                <p class="p1">
+                    <span class="prices">{{v.productPrice}}</span>
+                    <span class="pincou">去凑单</span>
+                </p>
+            </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/art-template.js"></script>
+    <script src="js/gsproduct.js"></script>
+    
+</body>
+</html>

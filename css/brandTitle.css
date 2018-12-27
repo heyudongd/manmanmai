@@ -1,0 +1,42 @@
+.product-mingci {
+  margin: 0.266667rem /* 20/75 */ 0;
+  width: 100%;
+  height: 1.373333rem /* 103/75 */;
+  font-size: 0.466667rem /* 35/75 */;
+  padding: 0.2rem /* 15/75 */;
+  color: #874604;
+  background-color: #eee;
+  border: 0.013333rem /* 1/75 */ solid #cccccc;
+}
+.category-title {
+  width: 100%;
+}
+.category-title li {
+  position: relative;
+  height: 1.333333rem /* 100/75 */;
+  width: 100%;
+  line-height: 1.333333rem /* 100/75 */;
+  background-color: #eee;
+  font-size: 0.466667rem /* 35/75 */;
+  padding-left: 0.266667rem /* 20/75 */;
+  border-bottom: 0.013333rem /* 1/75 */ solid #cccccc;
+}
+.category-title li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: #000;
+  font-weight: 700;
+}
+.category-title li::before {
+  content: "";
+  display: block;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-bottom: 0.05rem solid grey;
+  border-right: 0.05rem solid grey;
+  transform: rotate(45deg) !important;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.133333rem /* 10/75 */;
+}

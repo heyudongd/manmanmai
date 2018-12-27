@@ -1,0 +1,136 @@
+.containe {
+  width: 100%;
+}
+.containe h3 {
+  margin: 0.266667rem /* 20/75 */ 0.106667rem /* 8/75 */;
+  height: 1.746667rem /* 131/75 */;
+  font-size: 0.573333rem /* 43/75 */;
+  text-align: center;
+  color: #5a5a5a;
+  font-weight: bold;
+}
+.containe h4 {
+  font-size: 0.4rem /* 30/75 */;
+  color: #ff6c00;
+  height: 0.72rem /* 54/75 */;
+}
+.containe .infor {
+  height: 0.573333rem /* 43/75 */;
+}
+.containe .infor span {
+  height: 100%;
+  font-size: 0.4rem /* 30/75 */;
+  color: #ccc;
+}
+.containe .content {
+  margin-top: 0.2rem /* 15/75 */;
+  width: 100%;
+}
+.containe .content .pic {
+  float: right;
+  height: 3.893333rem /* 292/75 */;
+  width: 3.893333rem /* 292/75 */;
+}
+.containe .content .pic img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.containe .content p {
+  color: #606060;
+  font-size: 0.4rem /* 30/75 */;
+}
+.containe .center {
+  width: 100%;
+}
+.containe .center ul {
+  width: 5.8rem /* 435/75 */;
+  margin: 0 auto;
+}
+.containe .center ul li {
+  height: 0.6rem /* 45/75 */;
+  width: 4.48rem /* 336/75 */;
+  border-bottom: 1px dashed #666;
+  font-size: 0.4rem /* 30/75 */;
+  padding: 0 0.266667rem /* 20/75 */;
+}
+.containe .center ul li strong {
+  color: #f27b04;
+  float: right;
+  font-weight: normal;
+}
+.containe .buy {
+  height: 0.973333rem /* 73/75 */;
+  background-color: #f27b04;
+  text-align: center;
+  font-size: 0.4rem /* 30/75 */;
+  line-height: 0.973333rem /* 73/75 */;
+  border-radius: 0.2rem /* 15/75 */;
+  margin: 0.333333rem /* 25/75 */ 0;
+}
+.containe .buy a {
+  display: block;
+  color: #fff;
+}
+.containe .comment {
+  width: 100%;
+  position: relative;
+}
+.containe .comment .tit {
+  margin-top: 0.4rem /* 30/75 */;
+  height: 1.16rem /* 87/75 */;
+  font-size: 0.4rem /* 30/75 */;
+}
+.containe .comment textarea {
+  width: 100%;
+  height: 4.186667rem /* 314/75 */;
+  border: 1px solid #000;
+}
+.containe .comment .tjdp {
+  position: absolute;
+  right: 0;
+  top: 3.333333rem /* 250/75 */;
+  background: #ff841d;
+  border: none;
+  border: 0.1rem solid #ff841d;
+  border-left: none;
+  border-top: none;
+  padding: 0;
+  width: 5rem;
+  height: 1.95rem;
+  color: #fff;
+  outline: 0;
+  border-radius: 0 0 0.1rem 0;
+  font-size: 0.8rem;
+}
+.containe .list {
+  width: 100%;
+}
+.containe .list .userimg {
+  height: 1.293333rem /* 97/75 */;
+  width: 1.293333rem /* 97/75 */;
+  float: left;
+}
+.containe .list .userimg img {
+  width: 100%;
+  height: 100%;
+}
+.containe .con {
+  margin-bottom: 0.266667rem /* 20/75 */;
+  overflow: hidden;
+  padding: 0.266667rem /* 20/75 */;
+  height: 100%;
+}
+.containe .con .username {
+  float: left;
+  font-size: 0.333333rem /* 25/75 */;
+  color: #5997c0;
+}
+.containe .con .time {
+  float: right;
+  font-size: 0.333333rem /* 25/75 */;
+  color: #ccc;
+}
+.containe .con .content {
+  font-size: 0.4rem /* 30/75 */;
+}

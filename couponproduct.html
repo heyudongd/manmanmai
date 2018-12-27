@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/couponproduct.css">
+    <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <div class="left">
+                <a href="coupon.html" class="icon-back"></a>
+            </div>
+            <div class="right">
+                
+                    <a href="#">
+                        <img src="images/header_app.png" alt="">
+                    </a>
+                
+            </div>
+            <div class="center">
+                优惠卷
+            </div>
+       </div>
+
+       <div class="note">
+        --点餐前出示手机中的优惠券，即可享受优惠--
+    </div>
+    <!-- 商品列表 -->
+    <ul class="coupon-list clearfix">
+  
+        
+ 
+</ul>
+            <!-- 底部 -->
+            <footer>
+                    <div class="top clearfix">
+                        <a href="">登录</a>
+                        <a href="">注册</a>
+                        <a href="#" class="img">返回顶部</a>
+                    </div>
+                    <div class="bottom">
+                            <p>
+                                <a href="javascript:;" style="color: Red;">手机APP下载</a>
+                                <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+                            </p>
+                            <p>m.manmanbuy.com</p>
+                    </div>
+                </footer>
+                
+        </div>  
+  
+
+<script type="text/html" id="couponproductTip">
+    {{each result v}}
+    <li>
+        <a href="#">
+              <div class="pic">
+                           {{@v.couponProductImg}}
+              </div>
+            <div class="infor">
+                 <p class="des">{{v.couponProductName}}</p>
+                 <p class="price"></p>
+                 <p class="date">{{v.couponProductTime}}</p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<div class="modal" style="display: none ;">
+      
+        <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    
+                </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev" ></div>
+                <div class="swiper-button-next"></div>
+            </div>
+       
+    </div>
+    <script type="text/html" id="tp">
+        {{each result v}}
+        <div class="swiper-slide">{{@v.couponProductImg}}</div>
+        {{/each}}
+    </script>
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/art-template.js"></script>
+    <script src="lib/swiper/js/swiper.min.js"></script>
+    <script src="js/Tools.js"></script>
+   <script src="js/couponproduct.js"></script>
+  
+    
+</body>
+</html>

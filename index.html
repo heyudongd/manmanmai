@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+                <div class="right">
+                    <a href="#">
+                        <img src="images/header_app.png" alt="">
+                    </a>
+                </div>
+                   <div class="left">
+                       <a href="index.html">
+                           <img src="images/header_logo.png" alt="">
+                       </a>
+                   </div>
+            </header>
+            <section class="search">
+                    <form action="">
+                       <input type="text" placeholder="请输入你想比价的商品">
+                       <input type="button" value="搜索">
+                    </form>
+                </section>
+        <section class="line"></section>
+        <section class="menu">
+                <ul class="clearfix">
+                    <!-- 坑 -->
+                
+                <!-- <li>
+                    <a href="category.html">
+                        <img src="images/ic_search.png" alt="比价搜索">
+                        <p>比价搜索</p>
+                    </a>
+                </li> -->
+                
+                
+            </ul>
+            </section>
+            <!-- 折扣 -->
+            <section class="recommend">
+                    <span>超级折扣推荐</span>
+                    <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
+          </section>
+          <!-- 商品区 -->
+          <section class="product">
+                <ul>
+                    <!--坑 -->
+            
+                 </ul>
+        </section>
+        <!-- 更多优惠信息 -->
+        <section class="more-infor">
+                <a href="moneyctrl.html">更多优惠信息&gt;&gt;</a>
+            </section>
+
+
+              <!-- 品牌排行 -->
+        <section class="recommend">
+                <span>品牌排行</span>
+                <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
+            </section>
+            <!-- 底部 -->
+            <footer>
+                    <div class="top clearfix">
+                        <a href="">登录</a>
+                        <a href="">注册</a>
+                        <a href="#" class="img">返回顶部</a>
+                    </div>
+                    <div class="bottom">
+                            <p>
+                                <a href="javascript:;" style="color: Red;">手机APP下载</a>
+                                <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+                            </p>
+                            <p>m.manmanbuy.com</p>
+                    </div>
+                </footer>
+        </div>  
+
+      
+   <script type="text/html" id="menuTip">
+    {{ each result v}}
+         <li>
+             <a href="{{v.titlehref}}">
+                 <%==v.img%>
+                 <p>{{v.name}}</p>
+             </a>
+         </li>
+         {{  /each }}
+    </script>
+    <script type="text/html" id="menuTip2">
+        {{each result v}}
+        <li>
+                <a href="moneyproduct.html?productid={{v.productId}}">
+                    <div class="pic">
+                        <%==v.productImgSm%>
+                    </div>
+                    <div class="infor">
+                        <div class="title">
+                            <p>
+                                {{v.productName}}
+                                <span>{{v.productPinkage}}</span>
+                            </p>
+                        </div>
+                        <div class="bottom">
+                                        <span class="time">
+                                            {{v.productFrom}}|{{v.productTime}}
+                                        </span>
+                        </div>
+                        <span class="icon">
+                                            {{v.productComCount.replace("有","").replace("人评论","")}}
+                                       </span>
+                    </div>
+                </a>
+            </li>
+    {{/each}}
+    </script>
+    
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/art-template.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

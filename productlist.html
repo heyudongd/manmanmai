@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="lib/pagination/pagination.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+                <div class="right">
+                    <a href="#">
+                        <img src="images/header_app.png" alt="">
+                    </a>
+                </div>
+                   <div class="left">
+                       <a href="index.html">
+                           <img src="images/header_logo.png" alt="">
+                       </a>
+                   </div>
+            </header>
+            <!-- 搜索区 -->
+            <section class="search">
+                    <form action="">
+                       <input type="text" placeholder="请输入你想比价的商品">
+                       <input type="button" value="搜索">
+                    </form>
+                </section>
+                <!-- 显示信息 -->
+                <section class="show-infor-list">
+                        <div class="left">
+                            <a href="index.html">首页</a>&gt;
+                            <a href="category.html">全部分类</a>&gt;
+                            <a class="type" href="javascript:void(0)">电视</a>&gt;
+                        </div>
+                        <div class="right">
+                            <input type="button" value="筛选">
+                        </div>
+                    </section>
+        <!-- 商品列表 -->
+        <section class="product-list">
+                <ul class="clearfix">
+                    <!-- 坑 -->
+               
+           </ul>
+           </section> 
+           <!-- 分页 -->
+           <div class="page">
+                <span>
+                    <a href="javascript:void(0)" class="prev">
+                        上一页
+                    </a>
+                </span>
+                <span>
+                    <select id="selectPage" name="select">
+                
+               
+                
+            </select>
+                </span>
+                <span>
+                    <a href="javascript:void(0)" class="next">
+                        下一页
+                    </a>
+                </span>
+            </div>
+       
+             <!-- 底部 -->
+            <footer>
+                    <div class="top clearfix">
+                        <a href="">登录</a>
+                        <a href="">注册</a>
+                        <a href="#" class="img">返回顶部</a>
+                    </div>
+                    <div class="bottom">
+                            <p>
+                                <a href="javascript:;" style="color: Red;">手机APP下载</a>
+                                <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+                            </p>
+                            <p>m.manmanbuy.com</p>
+                    </div>
+                </footer>
+        </div>  
+
+      <script type=text/html"" id="productTip">
+        {{each result v i}}
+              
+        <li data-catetory="" class="clearfix" >
+                <a href="bijia.html?productid={{v.productId}}&amp;category={{category}}&amp;categoryid={{v.categoryId}}">
+                    <div class="pic">
+                           <%==v.productImg%> 
+                    </div>
+                    <div class="infor">
+                        <p class="des">{{v.productName}}}</p>
+                        <p class="price">{{v.productPrice}}</p>
+                        <p class="comment">
+                            <span>{{v.productQuote}}</span>
+                            <span>{{v.productCom}}</span>
+                        </p>
+                    </div>
+                </a>
+            </li>
+            {{/each}}
+    </script>
+
+    <script type=text/html"" id="productTip1">
+        <%for(i=0;i<num;i++){%>
+            <option data-index="{{i}}">{{i+1}}/{{num}}</option>
+        <%}%>
+    </script>
+   
+    
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/art-template.js"></script>
+    <script src="js/Tools.js"></script>
+    <script src="js/productlis.js"></script>
+    
+</body>
+</html>

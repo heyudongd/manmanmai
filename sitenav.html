@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sitenav.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <a href="index.html" class="icon-back"></a>
+            </div>
+            <div class="right">
+                
+                    <a href="#">
+                        <img src="images/header_app.png" alt="">
+                    </a>
+                
+            </div>
+            <div class="center">
+                商场导航
+            </div>
+       </div>
+
+    <div class="link clearfix">
+      <!-- keng -->
+    </div>
+
+
+            <!-- 底部 -->
+            <footer>
+                    <div class="top clearfix">
+                        <a href="">登录</a>
+                        <a href="">注册</a>
+                        <a href="#" class="img">返回顶部</a>
+                    </div>
+                    <div class="bottom clearfix">
+                            <p>
+                                <a href="javascript:;" style="color: Red;">手机APP下载</a>
+                                <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+                            </p>
+                            <p>m.manmanbuy.com</p>
+                    </div>
+                </footer>
+        </div>
+        <script type="text/html" id="tip1">
+            {{each result v}}
+            <a href="{{v.navHref}}">
+                <img src="{{v.navImg}}" alt="">
+                <span>{{v.navTitle}}</span>
+            </a>
+            {{/each}}
+        </script>  
+    
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/art-template.js"></script>
+    <script src="js/sitenav.js"></script>
+    
+</body>
+</html>

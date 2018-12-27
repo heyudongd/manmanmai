@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/baicaijia.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <a href="index.html" class="icon-back"></a>
+            </div>
+            <div class="right">
+                
+                    <a href="#">
+                        <img src="images/header_app.png" alt="">
+                    </a>
+                
+            </div>
+            <div class="center">
+                省钱控--最新优惠
+            </div>
+       </div>
+       <!-- title -->
+       <section class="title">
+        <ul style="width: 1840px;">
+     
+     <!-- 坑 -->
+     
+     
+     
+        </ul>
+        <div class="search-btn"></div>
+ </section>
+
+<!-- 商品 -->
+<section class="list">
+    <ul>
+    
+   
+</ul>
+</section>
+            <!-- 底部 -->
+            <footer>
+                    <div class="top clearfix">
+                        <a href="">登录</a>
+                        <a href="">注册</a>
+                        <a href="#" class="img">返回顶部</a>
+                    </div>
+                    <div class="bottom">
+                            <p>
+                                <a href="javascript:;" style="color: Red;">手机APP下载</a>
+                                <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+                            </p>
+                            <p>m.manmanbuy.com</p>
+                    </div>
+                </footer>
+                <div class="bai_back">顶</div>
+        </div>  
+<script type="text/html" id="baicaiTip">
+    {{each result v i}}
+    <li data-href="0" data-id="{{v.titleId}}">
+        <a href="javascript:void(0)" class="{{i==0?'active':''}}">{{v.title}}</a>
+    </li>
+    {{/each}}
+</script>
+<!--商品模板 -->
+<script type="text/html" id="baicaijiaTip">
+    {{each result v}}
+    <li>
+        <a href=""></a>
+            <div class="pic">
+               <%==v.productImg%>
+            </div>
+            <div class="infor">
+                <p class="des"><%==v.productName%></p>
+                <div class="price">
+                   <%==v.productPrice%>
+                </div>
+                <div>
+                   <%==v.productCouponRemain%>
+                </div>
+                <div class="p">
+                   {{@v.productCoupon}}
+                </div>
+                <div class="g">
+                    <a biz-itemid="56297410_8818824_54778388" isconvert="1" href="http://s.click.taobao.com/3HlIdQx" target="_blank">下单链接</a>
+                </div>
+            </div>
+
+    </li> 
+    {{/each}}
+
+</script>
+
+    
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/art-template.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/baicaijia.js"></script>
+    
+    
+</body>
+</html>

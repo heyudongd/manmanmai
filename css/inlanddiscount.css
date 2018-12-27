@@ -1,0 +1,40 @@
+.discount {
+  width: 100%;
+}
+.discount li {
+  width: 49%;
+  float: left;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.discount li .pic {
+  width: 100%;
+  height: 4.546667rem /* 341/75 */;
+  padding: 0.266667rem /* 20/75 */;
+}
+.discount li .pic img {
+  display: block;
+  height: 90%;
+  width: 90%;
+  margin: 0 auto;
+}
+.discount li .title {
+  padding: 0 0.266667rem /* 20/75 */;
+  height: 1.066667rem /* 80/75 */;
+  font-size: 0.4rem /* 30/75 */;
+  color: #000;
+}
+.discount li .price {
+  color: #ff6c00;
+  height: 1.066667rem /* 80/75 */;
+  font-size: 0.4rem /* 30/75 */;
+  text-align: left;
+  line-height: 1.066667rem /* 80/75 */;
+  padding: 0 0.133333rem /* 10/75 */;
+}
+.discount li .infor {
+  font-size: 0.4rem /* 30/75 */;
+  color: #ccc;
+  padding: 0.133333rem /* 10/75 */ 0.266667rem /* 20/75 */;
+  text-align: left;
+}

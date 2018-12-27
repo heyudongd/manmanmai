@@ -1,0 +1,114 @@
+@import 'base';
+@import 'normalize';
+@import 'common';
+@import 'category';
+@import 'productlist';
+@import 'bijia';
+@import 'moneyctrl';
+@import 'moneyproduct';
+@import 'inlanddiscount';
+@import 'brandTitle';
+@import 'brand';
+
+
+
+.menu{
+    width: 100%;
+  ul{
+      li{
+          float: left;
+          width: 25%;
+       
+        a{
+            display: block;
+            padding:.266667rem /* 20/75 */ .266667rem /* 20/75 */ .266667rem /* 20/75 */;
+            text-align: center;
+            color: #000;
+            font-size: .333333rem /* 25/75 */;
+        }
+      }
+  }
+}
+.recommend{
+    height: 1.133333rem /* 85/75 */;
+    width: 100%;
+    background-color: orange;
+    position: relative;
+  line-height: 1.133333rem /* 85/75 */;
+     img {
+        width: .64rem /* 48/75 */;
+        height: .64rem /* 48/75 */;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: .133333rem /* 10/75 */;
+    }
+     span {
+        color: white;
+        font-size: .466667rem /* 35/75 */;
+        margin-left: .4rem /* 30/75 */;
+     }
+}
+// 商品区
+.product{
+    width: 100%;
+    li{
+        border-bottom: 1px solid #ccc;
+        padding: .266667rem /* 20/75 */;
+        
+    a{
+        display: block;
+        img{
+            float: left;
+            height: 3.573333rem /* 268/75 */;
+            width: 3.573333rem /* 268/75 */;
+        }
+        .infor{
+            padding: .266667rem /* 20/75 */;
+            overflow: hidden;
+            height: 3.573333rem /* 268/75 */;
+            
+            .title{
+                
+                p{
+                    font-size: .4rem /* 30/75 */;
+                }
+                span{
+                    color: orange;
+                }
+            }
+        .bottom{
+            margin-top: 1.066667rem /* 80/75 */;
+            float: left;
+            span{
+                font-size: .4rem /* 30/75 */;
+                color: #ccc;
+                
+                
+            }
+           
+        }
+        .icon{
+          float: right;  
+          font-size: .4rem /* 30/75 */;
+          color: #ccc;
+          margin-top: 1.066667rem /* 80/75 */;
+        }
+
+        }
+
+    }
+}
+   
+}
+.more-infor{
+    margin: .2rem /* 15/75 */ 0;
+    height:1rem /* 75/75 */;
+    width: 100%;
+    border-radius: .666667rem /* 50/75 */;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height:1rem;
+    font-size: .4rem /* 30/75 */; 
+}

@@ -1,0 +1,332 @@
+.container {
+  max-width: 10rem /* 750/75 */;
+  min-width: 4.266667rem /* 320/75 */;
+  margin: 0 auto;
+  background-color: #ffff;
+}
+header {
+  width: 100%;
+  height: 1.56rem /* 117/75 */;
+  background-color: #ff841d;
+}
+header .right {
+  width: 1.56rem /* 117/75 */;
+  float: right;
+  height: 100%;
+}
+header .right img {
+  display: block;
+  width: 1.106667rem /* 83/75 */;
+  height: 1.106667rem /* 83/75 */;
+  margin: 0.266667rem /* 20/75 */ auto;
+}
+header .left {
+  overflow: hidden;
+  height: 100%;
+}
+header .left img {
+  height: 0.8rem /* 60/75 */;
+  width: 6rem /* 450/75 */;
+  margin: 0.4rem /* 30/75 */ 0.533333rem /* 40/75 */;
+}
+.search {
+  padding: 0.133333rem /* 10/75 */;
+  height: 1.626667rem /* 122/75 */;
+  width: 100%;
+}
+.search form {
+  width: 100% /* 538/75 */;
+  height: 100% /* 70/75 */;
+}
+.search form input[type=text] {
+  height: 0.933333rem /* 70/75 */;
+  width: 7.173333rem /* 538/75 */;
+  float: left;
+  border-radius: 0.666667rem /* 50/75 */;
+  font-size: 0.4rem /* 30/75 */;
+  background-color: #f1f1f1;
+  text-indent: 0.75rem;
+  margin-top: 0.266667rem /* 20/75 */;
+}
+.search form input[type=button] {
+  height: 0.973333rem /* 73/75 */;
+  width: 2.04rem /* 153/75 */;
+  float: right;
+  border-radius: 0.666667rem /* 50/75 */;
+  background-color: #ff841d;
+  font-size: 0.4rem /* 30/75 */;
+  color: #f1f1f1;
+  margin-top: 0.266667rem /* 20/75 */;
+}
+.line {
+  margin-top: 0.266667rem /* 20/75 */;
+  height: 0.32rem /* 24/75 */;
+  background-color: #f1f1f1;
+}
+.page {
+  font-size: 0;
+  margin-top: 0.5rem;
+}
+.page span {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 33.33%;
+  font-size: 0.4rem /* 30/75 */;
+  height: 0.8rem /* 60/75 */;
+  line-height: 0.8rem /* 60/75 */;
+  text-align: center;
+}
+.page span a {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+  border-bottom: 1px solid #bababa;
+  box-shadow: 0 0 1px #666;
+  border-radius: 5px;
+  padding: 0.2rem /* 15/75 */ 0.4rem /* 30/75 */;
+  font-size: 0.4rem /* 30/75 */;
+  color: #666;
+}
+.page span #selectPage {
+  display: inline-block;
+  padding: 0.16rem /* 12/75 */ 0.333333rem /* 25/75 */;
+  font-size: 0.4rem /* 30/75 */;
+}
+footer {
+  margin-top: 0.4rem /* 30/75 */;
+}
+footer .top {
+  height: 1.066667rem /* 80/75 */;
+}
+footer .top a {
+  display: block;
+  width: 33.33%;
+  text-align: center;
+  font-size: 0.4rem /* 30/75 */;
+  height: 1.066667rem /* 80/75 */;
+  line-height: 1.066667rem /* 80/75 */;
+  float: left;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+footer .top .img {
+  position: relative;
+}
+footer .top .img :after {
+  content: "";
+  display: block;
+  width: 0.48rem /* 36/75 */;
+  height: 0.48rem /* 36/75 */;
+  background: url(http://www.zuyushop.com/wap/images/top.jpg) 0 0 no-repeat;
+  background-size: 0.75rem;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.5rem;
+}
+footer .bottom {
+  font-size: 0.333333rem /* 25/75 */;
+  text-align: center;
+}
+.header {
+  height: 1.426667rem /* 107/75 */;
+  background-color: #f4483e;
+  zoom: 1;
+}
+.header .left {
+  float: left;
+  height: 100%;
+  width: 1.613333rem /* 121/75 */;
+  position: relative;
+}
+.header .left a {
+  display: block;
+}
+.header .left a:before {
+  content: "";
+  display: block;
+  width: 0.48rem /* 36/75 */;
+  height: 0.48rem /* 36/75 */;
+  position: absolute;
+  border-left: 0.05rem solid #ffff;
+  border-bottom: 0.05rem solid #ffff;
+  transform: rotate(45deg);
+  top: 0.4rem /* 30/75 */;
+  right: 0.6rem /* 45/75 */;
+}
+.header .right {
+  float: right;
+  height: 100%;
+  width: 1.613333rem /* 121/75 */;
+}
+.header .right img {
+  display: block;
+  width: 1.106667rem /* 83/75 */;
+  height: 1.106667rem /* 83/75 */;
+  margin: 0.2rem /* 15/75 */ auto;
+}
+.header .center {
+  overflow: hidden;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 0.533333rem /* 40/75 */;
+  line-height: 1.426667rem /* 107/75 */;
+}
+.title {
+  height: 1.36rem /* 102/75 */;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.title ul {
+  height: 100%;
+}
+.title ul li {
+  width: 1.68rem /* 126/75 */;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 1.36rem /* 102/75 */;
+  font-size: 0.333333rem /* 25/75 */;
+}
+.title ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.title ul li a.active {
+  color: #f4483e;
+  border-bottom: 0.04rem /* 3/75 */ solid #fc353a;
+}
+.title .search-btn {
+  position: absolute;
+  width: 1.266667rem /* 95/75 */;
+  height: 1.226667rem /* 92/75 */;
+  top: 0.066667rem /* 5/75 */;
+  right: 0.066667rem /* 5/75 */;
+  background: url("../images/ic_search.png") 0 0 no-repeat;
+  z-index: 999;
+  background-size: 1.226667rem /* 92/75 */ 1.226667rem /* 92/75 */;
+  border-left: 2px solid #666;
+}
+.list {
+  margin-top: 0.04rem /* 3/75 */;
+  border-top: 0.066667rem /* 5/75 */ solid #cccccc;
+  width: 100%;
+}
+.list ul {
+  width: 100%;
+}
+.list ul li {
+  height: 4.866667rem /* 365/75 */;
+  width: 100%;
+}
+.list ul li .pic {
+  float: left;
+  width: 4.213333rem /* 316/75 */;
+  height: 4.213333rem /* 316/75 */;
+}
+.list ul li .pic img {
+  width: 100%;
+  height: 100%;
+}
+.list ul li .infor {
+  padding: 0.133333rem /* 10/75 */;
+  overflow: hidden;
+  height: 4.866667rem /* 365/75 */;
+}
+.list ul li .infor .des {
+  font-size: 0.4rem /* 30/75 */;
+  height: 0.666667rem /* 50/75 */;
+}
+.list ul li .infor .price {
+  margin: 15px 0;
+  height: 1.16rem /* 87/75 */;
+  line-height: 1.16rem /* 87/75 */;
+  font-size: 0.533333rem /* 40/75 */;
+  color: #f4483e;
+}
+.list ul li .infor .price span {
+  color: #f4483e;
+  font-size: 0.4rem /* 30/75 */;
+}
+.list ul li .infor .price del {
+  font-size: 0.4rem /* 30/75 */;
+  text-decoration: line-through;
+  color: #ccc;
+  margin-left: 0.2rem /* 15/75 */;
+}
+.list ul li .infor .bar {
+  width: 100%;
+  height: 43px;
+}
+.list ul li .infor .bar i {
+  vertical-align: middle;
+  position: relative;
+  box-sizing: border-box;
+  width: 2.56rem /* 192/75 */;
+  height: 0.4rem /* 30/75 */;
+  border: 0.05rem solid #fc353a;
+  border-radius: 0.3rem;
+  color: #fff;
+  font-weight: 900;
+  background: #ffb7b7;
+  text-align: center;
+  overflow: hidden;
+  display: inline-block;
+}
+.list ul li .infor .bar i em {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 5px;
+  background: #fc353a;
+  display: block;
+}
+.list ul li .infor .bar b {
+  color: #f4483e;
+  font-size: 0.4rem /* 30/75 */;
+  text-align: right;
+  font-weight: normal;
+  margin-left: 0.133333rem /* 10/75 */;
+}
+.list ul li .infor .p {
+  width: 3.573333rem /* 268/75 */;
+  height: 0.906667rem /* 68/75 */;
+  border: 2px dashed #f4483e;
+  font-size: 0.4rem /* 30/75 */;
+  text-align: center;
+  line-height: 0.853333rem /* 64/75 */;
+  float: left;
+  margin-top: 0.4rem /* 30/75 */;
+}
+.list ul li .infor .g {
+  width: 1.813333rem /* 136/75 */;
+  height: 0.906667rem /* 68/75 */;
+  background-color: #f4483e;
+  font-size: 0.4rem /* 30/75 */;
+  line-height: 0.906667rem /* 68/75 */;
+  float: right;
+  border-radius: 0.133333rem /* 10/75 */;
+  margin-top: 0.4rem /* 30/75 */;
+}
+.list ul li .infor .g a {
+  color: #fff;
+  display: block;
+}
+.bai_back {
+  position: fixed;
+  bottom: 0.4rem /* 30/75 */;
+  right: 0;
+  height: 0.666667rem /* 50/75 */;
+  width: 0.666667rem /* 50/75 */;
+  background-color: #666;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.266667rem /* 20/75 */;
+  text-align: center;
+  line-height: 0.666667rem /* 50/75 */;
+  cursor: pointer;
+}

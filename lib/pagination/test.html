@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- 1. 引入文件 -->
+  <link rel="stylesheet" href="pagination.css">
+  <script src="../../assets/vendors/jquery/jquery.min.js"></script>
+  <script src="jquery.pagination.js"></script>
+</head>
+<body>
+  <!-- 2. 准备一个盒子 -->
+  <div class="pagination-box"></div>
+
+  <!-- 3. 调用pagination方法 -->
+  <script>
+    //简单使用 传一个参数, 多少条数据
+  $('.pagination-box').pagination(600,
+      {
+　　　　　　　
+              prev_text: "上一页",
+              next_text: "下一页",
+              num_edge_entries: 1,       //两侧首尾分页条目数
+              num_display_entries: 5,    //连续分页主体部分分页条目数
+              current_page: 4,   //当前页索引
+              load_first_page: false, //初始化分页的时候,回调函数不执行
+              callback: function(index){
+                //默认第一次初始化和每一次点击都会调用
+                //会传入待机的页签的下标
+               alert(index);
+              }  //每一次点击页签的时候调用。
+
+　　　 });
+  
+  </script>
+</body>
+</html>

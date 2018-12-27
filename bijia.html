@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bijia.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="right">
+                <a href="#">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+            <div class="left">
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="">
+                </a>
+            </div>
+        </header>
+        <!-- 搜索区 -->
+        <section class="search">
+            <form action="">
+                <input type="text" placeholder="请输入你想比价的商品">
+                <input type="button" value="搜索">
+            </form>
+        </section>
+        <!-- 显示信息 -->
+        <section class="show-infor-list">
+            <div class="left">
+                <a href="index.html">首页</a>&gt;
+                <a href="category.html">全部分类</a>&gt;
+                <a class="type" href="javascript:void(0)">电视</a>&gt;
+            </div>
+            <div class="right">
+                <input type="button" value="筛选">
+            </div>
+        </section>
+        <!--商品展示区 -->
+        <section class="product-bijia clearfix">
+            <!-- 坑 -->
+        </section>
+
+        <!-- ul -->
+        <section class="tab">
+            <ul class="clearfix">
+                <li>
+                    <a href="#">比价购买</a>
+                </li>
+                <li>
+                    <a href="#">商品参数</a>
+                </li>
+                <li>
+                    <a href="#">评价(2322)</a>
+                </li>
+            </ul>
+        </section>
+        <!-- 表格 -->
+        <section class="bijia-api">
+
+     
+           
+
+        </section>
+
+        <section class="note">
+
+            实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+
+        </section>
+
+        <!-- 标题 -->
+        <section class="product-title">
+            <p>网友评价</p>
+        </section>
+
+        <ul class="product-list">
+
+           <!-- 坑 -->
+
+        </ul>
+
+        <!-- 底部 -->
+        <footer>
+            <div class="top clearfix">
+                <a href="">登录</a>
+                <a href="">注册</a>
+                <a href="#" class="img">返回顶部</a>
+            </div>
+            <div class="bottom">
+                <p>
+                    <a href="javascript:;" style="color: Red;">手机APP下载</a>
+                    <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+                </p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/html" id="tip">
+        {{each result v}}
+            <div class="des">
+                <p>{{v.productName}}</p>
+         </div>
+     <div class="img"><%==v.productImg%></div>
+        <div class="collect">
+         <img src="http://www.zuyushop.com/wap/images/sc.jpg" alt="">
+        </div>
+        {{/each}}
+</script>
+<script type="text/template" id="tpl2">
+    {{ each  result v}}
+           <li>
+                 <div class="top">
+                      <span class="left">{{v.comName }}</span>
+                     <span class="right">{{ v.comTime }}</span>
+                 </div>
+                 <div class="center">{{ v.comFrom }}</div>
+               <div class="bottom">{{ v.comContent }}</div>
+           </li>
+    {{ /each }}
+</script>
+<script type="text/template" id="tpl3">
+    {{ each  result v}}
+           <%==v.bjShop%>
+    {{ /each }}
+</script>
+
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/art-template.js"></script>
+    <script src="js/Tools.js"></script>
+    <script src="js/bijia.js"></script>
+
+
+</body>
+
+</html>

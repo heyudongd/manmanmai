@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+   
+</head>
+<body>
+    <div class="container">
+        <header>
+                <div class="right">
+                    <a href="#">
+                        <img src="images/header_app.png" alt="">
+                    </a>
+                </div>
+                   <div class="left">
+                       <a href="index.html">
+                           <img src="images/header_logo.png" alt="">
+                       </a>
+                   </div>
+            </header>
+            <!-- 搜索区 -->
+            <section class="search">
+                    <form action="">
+                       <input type="text" placeholder="请输入你想比价的商品">
+                       <input type="button" value="搜索">
+                    </form>
+                </section>
+                <!-- 显示信息 -->
+                <section class="show-infor-list">
+                        <div class="left">
+                            <a href="index.html">首页</a>&gt;
+                            <a href="category.html">全部分类</a>&gt;
+                        </div>
+                       
+                    </section>
+                    <div class="device">
+                        平板电视哪个牌子好
+                    </div>
+
+                    <ul class="type">
+                       <!-- keng -->
+                    </ul>
+                    <!-- 平板电视产品销量排行 -->
+                    <div class="device">
+                        平板电视产品销量排行
+                    </div>
+                    <ul class="sale clearfix">
+                        <!-- 坑 -->
+                    </ul>
+                    <!-- 平板电视新评论 -->
+                    <div class="comment">
+                  
+                    </div>
+             <!-- 底部 -->
+            <footer>
+                    <div class="top clearfix">
+                        <a href="">登录</a>
+                        <a href="">注册</a>
+                        <a href="#" class="img">返回顶部</a>
+                    </div>
+                    <div class="bottom">
+                            <p>
+                                <a href="javascript:;" style="color: Red;">手机APP下载</a>
+                                <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+                            </p>
+                            <p>m.manmanbuy.com</p>
+                    </div>
+                </footer>
+        </div>  
+<script type="text/html" id="brandTip">
+    {{each result v i}}
+    <li>
+        <a href="productlist.html?categoryid={{v.categoryId}}&amp;pageid=1">
+              <em data-i="-1" class="top{{i}}">{{v.brandId}}</em>
+            <div>
+                <p>{{v.brandName}}</p>
+                <p>{{v.brandInfo}}</p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script type="text/html" id="brandTip1">
+    {{each result v}}
+    <li>
+        <a href="bijia.html?productid={{v.productId}}" class="clearfix">
+            <div class="pic">{{@v.productImg}}</div>
+            <div class="infor">
+                <p class="des">{{v.productName}}</p>
+                <p class="price">{{v.productPrice}}</p>
+                <p class="com">
+                    <span>{{v.productQuote}}</span>
+                    <span>{{v.productCom}}</span>
+                </p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script type="text/html" id="tip3">
+    {{each result v}}
+    <div class="device">
+        平板电视新评论</div>
+        <div class="firstImg clearfix">
+            {{@str}}
+         </div>
+
+         <div class="box clearfix
+         ">
+            <span class="left">{{v.comName}}</span>
+           <span class="right">{{v.comTime}}</span>
+           <div class="content">{{v.comContent}}}</div>
+       </div>
+       {{/each}}
+</script>
+   
+    
+    <script src="lib/flexible/flexible.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/art-template.js"></script>
+    <script src="js/Tools.js"></script>
+    <script src="js/brand.js"></script>
+    
+</body>
+</html>
